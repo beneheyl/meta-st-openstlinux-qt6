@@ -41,6 +41,7 @@ ADDONSLAYERS = ""
 ADDONSLAYERS += "${@'${OEROOT}/layers/meta-linaro/meta-linaro' if os.path.isfile('${OEROOT}/layers/meta-linaro/meta-linaro/conf/layer.conf') else ''}"
 ADDONSLAYERS += "${@'${OEROOT}/layers/meta-linaro/meta-linaro-toolchain' if os.path.isfile('${OEROOT}/layers/meta-linaro/meta-linaro-toolchain/conf/layer.conf') else ''}"
 ADDONSLAYERS += "${@'${OEROOT}/layers/meta-openembedded/meta-networking' if os.path.isfile('${OEROOT}/layers/meta-linaro/meta-linaro/conf/layer.conf') else ''}"
+ADDONSLAYERS += "${@'${OEROOT}/layers/meta-qt6' if os.path.isfile('${OEROOT}/layers/meta-qt6/conf/layer.conf') else ''}"
 
 # Security layer
 ADDONSLAYERS += " \
